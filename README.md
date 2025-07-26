@@ -283,6 +283,4 @@ This project is created for educational purposes as part of a machine learning c
 
 ---
 
-**Built with ❤️ for accessibility and inclusion**
-
-*Empowering the visually impaired through AI-powered assistive technology*
+**Built with ❤️ by Stecie**
