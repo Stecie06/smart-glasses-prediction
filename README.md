@@ -47,7 +47,7 @@ linear_regression_model/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/smart-glasses-prediction.git
+git clone https://github.com/Stecie06/smart-glasses-prediction.git
 cd smart-glasses-prediction
 ```
 
@@ -63,7 +63,7 @@ smart_glasses_env\Scripts\activate
 source smart_glasses_env/bin/activate
 
 # Install dependencies
-cd summative/API
+cd API
 pip install -r requirements.txt
 ```
 
@@ -82,12 +82,11 @@ cd ../API
 python prediction.py
 ```
 The API will be available at: `http://localhost:8000`
-- Swagger UI: `http://localhost:8000/docs`
-- Health Check: `http://localhost:8000/health`
+- Swagger UI: `https://smart-glasses-prediction.onrender.com/`
 
 ### 5. Set Up Flutter App
 ```bash
-cd ../FlutterApp
+cd ../flutterapp
 flutter pub get
 flutter run
 ```
@@ -121,19 +120,15 @@ static const String baseUrl = 'https://your-app-name.onrender.com';
 2. Connect Android device or start emulator
 3. Run: `flutter run`
 
-### iOS Setup (macOS only)
-1. Ensure Xcode is installed
-2. Run: `flutter run -d ios`
-
 ## 🧪 Testing the System
 
 ### API Testing
 ```bash
 # Health check
-curl https://your-api-url.onrender.com/health
+curl https://smart-glasses-prediction.onrender.com/health
 
 # Prediction test
-curl -X POST "https://your-api-url.onrender.com/predict" \
+curl -X POST "https://smart-glasses-prediction.onrender.com//predict" \
      -H "Content-Type: application/json" \
      -d '{
        "cognition": 1,
@@ -147,9 +142,9 @@ curl -X POST "https://your-api-url.onrender.com/predict" \
 
 ### Mobile App Testing
 1. Open the app
-2. Navigate to prediction screen
+2. Navigate to the prediction screen
 3. Toggle training availability options
-4. Tap "Predict Demand"
+4. Tap "Predict Demand."
 5. Verify results display correctly
 
 ## 📊 Model Performance
@@ -157,7 +152,7 @@ curl -X POST "https://your-api-url.onrender.com/predict" \
 ### Best Model: Random Forest Regressor
 - **Test R² Score**: 0.8542
 - **Test MSE**: 0.1247
-- **Features**: 9 engineered features including training availability and composite scores
+- **Features**: 9 engineered features, including training availability and composite scores
 
 ### Feature Importance
 1. **Vision Training** (Most Important)
@@ -268,10 +263,8 @@ curl -X POST "https://your-api-url.onrender.com/predict" \
 
 ## 🔗 Links
 
-- **API Documentation**: https://your-api-url.onrender.com/docs
-- **Health Check**: https://your-api-url.onrender.com/health
+- **API Documentation**: [https://smart-glasses-prediction.onrender.com/docs](https://smart-glasses-prediction.onrender.com/docs)
 - **YouTube Demo**: [Your video link here]
-- **GitHub Repository**: [Your repo link here]
 
 ## 👥 Contributing
 
