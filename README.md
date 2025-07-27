@@ -78,11 +78,10 @@ python multivariate.py
 
 ### 4. Run the API Locally
 ```bash
-cd ../API
-python prediction.py
+cd API && uvicorn prediction:app --host 0.0.0.0 --port $PORT
 ```
 The API will be available at: `http://localhost:8000`
-- Swagger UI: `https://smart-glasses-prediction.onrender.com/`
+- Swagger UI: `https://smart-glasses-prediction.onrender.com/docs`
 
 ### 5. Set Up Flutter App
 ```bash
@@ -91,26 +90,10 @@ flutter pub get
 flutter run
 ```
 
-## 🌐 API Deployment (Render)
-
-### Step 1: Prepare for Deployment
-1. Ensure all model files are in the API directory
-2. Update the API base URL in `api_service.dart`
-3. Test API locally before deployment
-
-### Step 2: Deploy to Render
-1. Create account at [render.com](https://render.com)
-2. Connect your GitHub repository
-3. Create a new Web Service
-4. Configure deployment settings:
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn prediction:app --host 0.0.0.0 --port $PORT`
-   - **Environment**: Python 3
-
 ### Step 3: Update Flutter App
 ```dart
 // In api_service.dart, update the baseUrl:
-static const String baseUrl = 'https://your-app-name.onrender.com';
+static const String baseUrl = '[https://your-app-name.onrender.com](https://smart-glasses-prediction.onrender.com)';
 ```
 
 ## 📱 Mobile App Setup
