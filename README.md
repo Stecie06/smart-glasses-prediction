@@ -247,7 +247,7 @@ curl -X POST "https://smart-glasses-prediction.onrender.com//predict" \
 ## 🔗 Links
 
 - **API Documentation**: [https://smart-glasses-prediction.onrender.com/docs](https://smart-glasses-prediction.onrender.com/docs)
-- **YouTube Demo**: [Your video link here]
+- **YouTube Demo**: (https://www.youtube.com/watch?v=AlLfr5EeO6M)
 
 ## 👥 Contributing
 
