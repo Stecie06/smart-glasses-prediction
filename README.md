@@ -90,12 +90,6 @@ flutter pub get
 flutter run
 ```
 
-### Step 3: Update Flutter App
-```dart
-// In api_service.dart, update the baseUrl:
-static const String baseUrl = '[https://your-app-name.onrender.com](https://smart-glasses-prediction.onrender.com)';
-```
-
 ## 📱 Mobile App Setup
 
 ### Android Setup
@@ -246,7 +240,7 @@ curl -X POST "https://smart-glasses-prediction.onrender.com//predict" \
 
 ## 🔗 Links
 
-- **API Documentation**: [https://smart-glasses-prediction.onrender.com/docs](https://smart-glasses-prediction.onrender.com/docs)
+- **API Documentation**: (https://smart-glasses-prediction.onrender.com/docs)
 - **YouTube Demo**: (https://www.youtube.com/watch?v=AlLfr5EeO6M)
 
 ## 👥 Contributing
